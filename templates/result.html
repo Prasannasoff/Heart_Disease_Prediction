@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Container for the result */
+        .result-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Prediction message */
+        .prediction-text {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Link to go back */
+        .back-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .back-link:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .result-container {
+                padding: 15px;
+                margin: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .prediction-text {
+                font-size: 1rem;
+            }
+
+            .back-link {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    <div class="result-container">
+        <p class="prediction-text">{{ prediction }}</p>
+        <a href="/" class="back-link">Go back</a>
+    </div>
+</body>
+</html>
